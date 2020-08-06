@@ -65,7 +65,7 @@ DWORD WINAPI Reader(LPVOID)
 
         if (isWriting || (lockedWriters > 0)) {
 			 
-				WaitForSingleObject(autorisedToRead, INFINITE);
+	WaitForSingleObject(autorisedToRead, INFINITE);
 				
         }
 
